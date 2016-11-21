@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Design Maker</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".signupbtn").click(function(){
+            (".signup").css("visibility", "visible");
+        });
+ });
+    </script>
+</head>
+<body>
+<div class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="#">Business Card</a></li>
+<li><a href="#">University Card</a></li>
+<li style="float:right; font-size:20px;"><a href="login.html"><i class="fa fa-user"></i> Login / SignUp</a></li>
+
+</ul>
+</div>
+<div class="container">
+  <form action="user.jsp" name="login" class="login">
+      <label>Login here</label>
+<input type="email" name="login_email" placeholder="Email Id"><br/>
+<input type="password" name="login_pass" placeholder="Password"><br/>
+<input type="submit" class="btn" value="Login"><br>
+      <input type="button" class="btn signupbtn" value="SignUp">
+
+  </form>
+    <!--<div class="regcircle"><h3>SignUp</h3></div>-->
+</div>
+    <form action="user.jsp" name="signup" class="signup">
+        <label>Create new Account</label>
+        <input type="text" name="fname" placeholder="First Name"><br/>
+        <input type="text" name="lname" placeholder="Last Name"><br/>
+        <input type="email" name="signup_email" placeholder="Email Id"><br/>
+        <input type="password" name="signup_pass" placeholder="Password"><br/>
+        <input type="password" name="con_pass" placeholder="Confirm Password"><br/>
+<input type="submit" class="btn" value="SignUp">
+    
+    </form>
+<div class="footer">
+  &copy; Design Maker
+</div>
+</body>
+</html>

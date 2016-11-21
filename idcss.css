@@ -1,0 +1,101 @@
+#period{
+  position:absolute;
+  bottom:10px;
+  left:50px;
+}html {
+  color: black;
+  font-weight: 300;
+  font-size: 16pt;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial Narrow", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+div {
+  box-sizing: border-box;
+}
+h2,
+h4 {
+  margin-bottom: 2px;
+}
+h4 {
+  margin-top: 0;
+  font-weight: 300;
+  color: #00a0d1;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 1.1em;
+}
+.rounded {
+  border-radius: 20px;
+}
+.round {
+  border-radius: 100%;
+}
+.float-left {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+}
+.id-card {
+  position: relative;
+  background-color: white;
+  height: 270px;
+  max-width: 40%;
+  margin: 20px auto;
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.3);
+}
+.id-card:after,
+.id-card:before {
+  content: "";
+  display: table;
+}
+.id-card:after {
+  clear: both;
+}
+.avatar-wrap {
+  width: 35%;
+}
+.bio-wrap {
+  width: 65%;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+.bio-wrap p {
+  font-size: 0.7em;
+}
+.links-wrap {
+  width: 100%;
+  background-color: #00a0d1;
+  background-color: rgba(0, 160, 209, 0.9);
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+  border-top: 5px solid rgba(0, 160, 220, 0.9);
+  text-align: center;
+}
+.links-wrap a span {
+  display: none;
+}
+.links-wrap a {
+  font-size: 1.7em;
+  color: white;
+  margin-right: 4%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.links-wrap a:hover {
+  opacity: .8;
+  -webkit-transform: scale(2, 2) rotate(10deg);
+          transform: scale(2, 2) rotate(10deg);
+}
